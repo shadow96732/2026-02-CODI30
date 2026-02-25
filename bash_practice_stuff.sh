@@ -63,4 +63,5 @@ case_statements
 
 #CMD LINE INJECTION W/ ECHO
 injection=data
-read -p "User Input Entry" input_test
+read -p "User Input Entry: " input_test
+echo $input_test
