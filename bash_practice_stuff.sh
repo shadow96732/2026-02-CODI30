@@ -12,7 +12,7 @@ read -p "read is used to take user input, with the -p flag prompting the user fo
 You can enter data here
 :" user_input
 
-echo -e "using input from the user like \" $user_input \" you can insert it for things like conditional statements "
+echo -e " \n using input from the user like \" $user_input \" you can insert it for things like conditional statements "
 
 read -p 'we can use user input and conditional statements to create different outcomes. For example, we can have different outputs for entering different numbers between 1 and 10
 Try it out! Enter a number between 1 and 10: ' user_input
@@ -21,8 +21,8 @@ if [ $user_input -lt 5 ]; then
 	echo "your input was less than 5"
 
 	elif [[ $user_input == 5 ]]; then
-		echo 'your input was equal to 5
-double [[]] brackets were used for regular expression'
+		echo 'your input was equal to 5'
+# double [[]] brackets were used for regular expression
 
 	else 
 		echo 'your input was greater than 5'
@@ -47,7 +47,7 @@ done
 demonstration_of_a_function_while_loop
 
 case_statements(){
-	read -p "Enter input: " input
+	read -p "Enter input (A or B or Other): " input
 	#input="A"
 	case $input in
 		A|a)
@@ -61,7 +61,7 @@ case_statements(){
 case_statements
 #note to self: look at command injection bc that will be interesting!
 
-#CMD LINE INJECTION W/ ECHO
+#CMD LINE INJECTION W/ ECHO test
 injection=data
 read -p "User Input Entry: " input_test
 echo $input_test
